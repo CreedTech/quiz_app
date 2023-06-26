@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 
 class BackGroundDesign extends StatelessWidget {
   const BackGroundDesign({

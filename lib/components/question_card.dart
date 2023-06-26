@@ -32,7 +32,7 @@ class QuestionCard extends StatelessWidget {
             question.question,
             style: Theme.of(context)
                 .textTheme
-                .headline6
+                .titleLarge
                 ?.copyWith(color: kBlackColor),
           ),
           const SizedBox(

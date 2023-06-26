@@ -25,7 +25,7 @@ class ScoreScreen extends StatelessWidget {
                 "Score",
                 style: Theme.of(context)
                     .textTheme
-                    .headline3!
+                    .displaySmall!
                     .copyWith(color: kSecondaryColor),
               ),
               const Spacer(),
@@ -33,7 +33,7 @@ class ScoreScreen extends StatelessWidget {
                 "${_qnController.numOfCorrectAns * 10}/ ${_qnController.questions.length * 10}",
                 style: Theme.of(context)
                     .textTheme
-                    .headline4!
+                    .headlineMedium!
                     .copyWith(color: kSecondaryColor),
               ),
               const Spacer(flex: 3,),

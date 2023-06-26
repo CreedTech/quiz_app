@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app/constants.dart';
 import 'package:quiz_app/views/quiz_screen.dart';
-import 'package:websafe_svg/websafe_svg.dart';
 
 import '../components/background_design.dart';
 
@@ -19,7 +18,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // TODO change to svg later
           // WebsafeSvg.asset("asset"),
           const BackGroundDesign(),
           SafeArea(
@@ -31,7 +29,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   const Spacer(flex: 2,),
                   Text(
                     'Let\'s Play Quiz,',
-                    style: Theme.of(context).textTheme.headline4?.copyWith(
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   const Text("Enter your information below"),
@@ -70,7 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                       child: Text(
                         "Lets Start Quiz",
-                        style: Theme.of(context).textTheme.button?.copyWith(
+                        style: Theme.of(context).textTheme.labelLarge?.copyWith(
                               color: Colors.black,
                             ),
                       ),
