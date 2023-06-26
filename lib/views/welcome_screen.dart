@@ -26,7 +26,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Spacer(flex: 2,),
+                  const Spacer(
+                    flex: 2,
+                  ),
                   Text(
                     'Let\'s Play Quiz,',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
@@ -61,7 +63,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
-                      padding: const EdgeInsets.all(kDefaultPadding * 0.75), // 15
+                      padding:
+                          const EdgeInsets.all(kDefaultPadding * 0.75), // 15
                       decoration: BoxDecoration(
                         gradient: kPrimaryGradient,
                         borderRadius: BorderRadius.circular(12),
@@ -74,7 +77,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ),
                   ),
-                  const Spacer(flex: 2,), // 2/6 of screen
+                  const Spacer(
+                    flex: 2,
+                  ), // 2/6 of screen
                 ],
               ),
             ),
@@ -84,5 +89,3 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 }
-
-
